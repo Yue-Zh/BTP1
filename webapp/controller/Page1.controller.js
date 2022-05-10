@@ -46,6 +46,15 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 
 			var oBindingContext = oEvent.getSource().getBindingContext();
 
+/*			return new Promise(function(fnResolve) {
+
+				this.doNavigate("Page2", oBindingContext, fnResolve, "");
+			}.bind(this)).catch(function(err) {
+				if (err !== undefined) {
+					MessageBox.error(err.message);
+				}
+			});*/
+
 			jQuery.ajax({
 				type: "POST",
 				url: "https://cfrdev01-dev-zfitmp02-api-miao.cfapps.jp20.hana.ondemand.com/rfc/deleteUntrSlip",
